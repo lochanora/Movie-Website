@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navstyle.css">
+     <!-- used to link the fonts like Mynerve -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mynerve|Shantell+Sans|Lilita+One|Ubuntu">
+    <!-- is used to link social media icons for the footer -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="footer.css">
+    <title>Main</title>
+    <style>
+ .movie {
+  display: inline-block;
+  margin-right: 20px;
+}
+.movie img{
+    width: 200pt;
+}h1 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 10px;
+}
+
+.recommended{
+  width: 380px;
+  height: 470px;
+}
+
+p {
+  font-weight: bold;
+}
+
+p {
+  font-family: 'Mynerve';
+  font-size: 20px;
+  color: #333;
+  font-weight:bold;
+  text-align: center;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <ul>
+                        <li><a href="main.html">Home</a></li>
+                        <li><a href="genres.html">Genres</a></li>
+                        <li><a href="rank.html">Highest Ranked movies</a></li>
+                        <li><a href="reviews.html">All Reviews</a></li>
+                </ul>
+                <div class="logo"><img src="logo.jpg" alt="logo.png"> </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <!-- Creating a div that will contain the top 5 movies -->
+        <div class="Top-5">
+            <h1>Top 5 Rated Movies</h1>
+            <!-- this movie-list will contain each movie along with its poster -->
+            <div id="movie-list"></div>
+          </div>
+          
+        <div class="Recommendations">
+            <h1>Our Recommendations</h1>
+            <table>
+                <tr>
+                   <td> <img src="https://i.pinimg.com/564x/53/58/81/535881e220a3792a1640a2e66e6c79b4.jpg" alt="Little Women" class="recommended"></td>
+                    <td><p>The story tells of how the sisters grow up, find love, and find their place in the world. <br> Four sisters and their mother at home. Their father is fighting in the war. 
+                        <br>Louisa May Alcott semi-autobiographical novel has captured young women and the young at heart for years.</p>
+                <!-- paragraph source : https://en.wikipedia.org/wiki/Parasite_(2019_film)#:~:text=The%20film%2C%20starring%20Song%20Kang,as%20unrelated%2C%20highly%20qualified%20individuals.-->
+                    </td>
+                </tr>
+                <tr>
+                    <td> <img src="https://i.pinimg.com/564x/99/f8/70/99f8702093bd74454c4636a33f558c4a.jpg" alt="Joker" class="recommended"></td>
+                     <td><p>The Joker is noted for his clownlike appearance and sick humour.
+                         <br>The Joker, initially portrayed as a small-time crook, was disfigured and driven insane by an accident with toxic chemicals. 
+                         <br>He was depicted with chalk-white skin, ruby-red lips permanently fixed in a demonic grin, and bright green hair.</p>
+                    <!-- paragraph source : https://www.britannica.com/topic/the-Joker-fictional-character -->
+                        </td>
+                 </tr>
+                 <tr>
+                    <td> <img src="https://i.pinimg.com/564x/3b/c6/b0/3bc6b0e980b8aad40c35f4e89888df2a.jpg" alt="Parasite" class="recommended"></td>
+                     <td><p>follows a poor family who scheme to become employed by a wealthy family
+                        <br> infiltrating their household by posing as unrelated, highly qualified individuals.</p>
+                    <!-- paragraph source :https://en.wikipedia.org/wiki/Parasite_(2019_film)#:~:text=The%20film%2C%20starring%20Song%20Kang,as%20unrelated%2C%20highly%20qualified%20individuals. -->
+                    </td>
+                 </tr>
+            </table>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="logo">
+                <img src="logo.jpg" alt="FilmOracle Logo" class="logo-icon">
+            </div>
+            <div class="footer-content">
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-twitter"></i></a>
+                </div>
+                <br>
+                <div>
+                    <a class="text-dark" href="https://filmoracle.com/">© 2023 Copyright: filmoracle.com</a>
+                </div>
+                <br>
+                <div>
+                    <a class="email-link" href="mailto:filmoracle@gmail.com">filmoracle@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+
+
+<script src="main.js"></script>
+</body>
+</html>

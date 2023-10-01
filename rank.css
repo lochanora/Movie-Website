@@ -1,0 +1,89 @@
+h1{
+    text-align: center;
+    font-weight: bolder;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.movie {
+    background-color: #eee;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 300px;
+}
+
+.movie img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.movie-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.movie-info h3 {
+    margin: 0;
+}
+
+.movie-info span {
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.green {
+    background-color: #4caf50;
+    color: white;
+}
+
+.orange {
+    background-color: #ff9800;
+    color: white;
+}
+
+.red {
+    background-color: #f44336;
+    color: white;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.page {
+    background-color: #333;
+    color: white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 0 1rem;
+}
+
+.page.disabled {
+    background-color: #666;
+    cursor: not-allowed;
+}
+
+.current {
+    font-weight: bold;
+    margin: 0 1rem;
+}
+
+.no-results {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 2rem;
+}

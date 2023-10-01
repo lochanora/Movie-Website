@@ -1,0 +1,178 @@
+#form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .search {
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    font-size: 18px;
+    outline: none;
+  }
+  
+
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  
+
+.movie {
+    width: 300px;
+    margin: 1rem;
+    border-radius: 3px;
+    box-shadow: 0.2px 4px 5px rgb(0, 0, 0, 0.1);
+    background-color: #eee;
+    position: relative;
+    overflow: hidden;
+}
+
+.movie img {
+    width: 100%;
+}
+
+.movie-info {
+    color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+    font-family: 'Ubuntu';
+}
+
+.movie-info h3 {
+    margin-top: 0;
+    color: black;
+    font-family: 'Lilita One';
+}
+
+.movie-info span {
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.movie-info span.green {
+    color: rgb(102, 151, 102);
+}
+
+.movie-info span.orange {
+    color: orange;
+}
+
+.movie-info span.red {
+    color: rgb(159, 31, 31);
+}
+
+.overview {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    padding: 1rem;
+    max-height: 100%;
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in;
+}
+
+
+.movie:hover .overview {
+    transform: translateY(0);
+}
+
+#tags {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto 10px;
+}
+
+.tag {
+    color: rgb(0, 0, 0);
+    padding: 10px 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    margin: 20px;
+    display: inline-block;
+    cursor: pointer;
+    font-family: 'Mynerve';
+    font-size: 20px;
+ 
+}
+
+.tag:hover {
+    background-color: rgb(226, 212, 193);
+}
+
+.tag.highlight {
+    background-color: rgb(160, 192, 244);
+
+}
+
+.no-results {
+    color: white;
+}
+
+.pagination {
+    display: flex;
+    margin: 10px 30px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.page {
+    padding: 20px;
+}
+
+.page.disabled {
+    cursor: not-allowed;
+    color: grey;
+}
+
+.current {
+    padding: 20px 20px;
+    border-radius: 50%;
+    border: 5px solid rgb(147, 143, 135);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+    
+.social-icons {
+    margin-top: 10px;
+}
+    
+.social-icons a {
+color: #fff;
+font-size: 24px;
+margin: 0 50px;
+}
+    
+.social-icons a:hover {
+color: #1da1f2;
+}
+
+.text-dark {
+    color: #ffffff;
+    font-size: small;
+    text-decoration: none;
+}

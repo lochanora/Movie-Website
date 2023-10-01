@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alkatra">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<title>Landing</title>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="container nav-container">
+				<a href="sign-in.html">Log in</a>
+				<a href="sign-up.html">Sign up</a>
+				<img src="LOGO.jpeg" alt="logo">
+            </div>
+        </div>
+    </nav>
+	<div id="slideshow">
+		<img src="https://photos.hancinema.net/photos/largephoto1374501.jpg" alt="movies">
+		<img src="https://images.squarespace-cdn.com/content/v1/58dc30b59f745617d2da1cc7/1525450320935-XAHTXHZ7SL2EWYTMUDKX/maxresdefault.jpg?format=1500w" alt="movies">
+		<img src="https://wallpapercave.com/dwp2x/1mQZjV4.jpg" alt="movies">
+		<img src="https://wallpapercave.com/dwp2x/ALhBOAp.jpg" alt="movies">
+		<img src="https://wallpapercave.com/wp/wp9736243.jpg" alt="movies">
+	</div>
+
+	<script>
+		let slideIndex = 0
+		showSlides()
+
+		function showSlides() {
+			let slides = document.querySelectorAll("#slideshow img")
+			for (let i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none"
+			}
+			slideIndex++
+			if (slideIndex > slides.length) {
+				slideIndex = 1
+			}
+			slides[slideIndex-1].style.display = "block"
+			setTimeout(showSlides, 900)
+		}
+	</script>
+</body>
+</html>
